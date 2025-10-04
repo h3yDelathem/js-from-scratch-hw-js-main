@@ -28,4 +28,4 @@ function findCommonElements(array1, array2) {
     return array
 }
 
-console.log(findCommonElements([10, 9, 8], [2, 3, 4, 5, 6, 7]))
+console.log(findCommonElements([1, 2, 3, 4], [2, 3, 5, 6]))
