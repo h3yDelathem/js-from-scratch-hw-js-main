@@ -23,11 +23,9 @@ function findCommonElements(array1, array2) {
         const element = array1[i]
         if (includesElement(array2, element)) {
             if (!includesElement(result, element)) {
-                result.push(element)
+                result.push(element);
             }
         }
     }
-    return result
+    return ;
 }
-
-console.log(findCommonElements([1, 2, 3], [2, 3, 4]))
