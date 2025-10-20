@@ -27,8 +27,9 @@ const filter = (array, callback) => {
     const result = [];
 
     for (let i = 0; i < array.length; i++) {
-        const mappedValue = callback(array[i], i);
-        result.push(mappedValue);
+        if (callback(array[i], i)) {
+            result.push(array[i]);
+        }
     }
     return result;
 }
